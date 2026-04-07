@@ -1,16 +1,59 @@
-# React + Vite
+# 🎬 Blastoise – The Binge Optimizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Optimize your free time. Watch smarter, not longer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📖 About the Project
 
-## React Compiler
+**Blastoise** is a smart content recommendation system that helps users decide what to watch based on the time they have available.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instead of endlessly scrolling through streaming platforms, users simply input their available free time, and the system generates an **optimal combination of unwatched content**—including TV episodes, anime, or movies—that fits perfectly within that duration.
 
-## Expanding the ESLint configuration
+The goal is to eliminate decision fatigue and make content consumption more efficient and enjoyable.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 💡 Idea
+
+With the massive amount of content available today, choosing what to watch often takes longer than actually watching it.
+
+Blastoise solves this by:
+- Taking user input (available time)
+- Selecting unwatched content from a database
+- Generating a **time-fit optimized watchlist**
+
+---
+
+## 🚀 Features (Planned)
+
+- ⏱️ Time-based content recommendation  
+- 🎥 Support for movies, TV shows, and anime  
+- 🧠 Smart optimization algorithm (knapsack-based approach)  
+- 📊 Efficient use of user free time  
+- 🔄 Dynamic and scalable backend  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React  
+- **Backend:** Node.js, Express.js  
+- **Database:** MySQL, MongoDB, Redis  
+
+---
+
+## ⚠️ Project Status
+
+🚧 This project is currently in the **planning phase**.  
+Development has not started yet.
+
+---
+
+## 👤 Author
+
+- **Aaryan Degama**
+- **Manas Singh**
+- **Jalendu Pandey**
+- **Geethika**
+- **Archee Jaiswal**
