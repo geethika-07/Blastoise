@@ -23,26 +23,17 @@ const Navbar = () => {
   ];
 
   return (
-    // Changed pt-8 to pt-12 to push the logo further down from the top edge
-    <div className="h-screen w-[84px] bg-[#121212] flex flex-col items-center pt-12 pb-6 border-r border-[#2A2A2A]">
+    <div className="h-screen w-[84px] bg-[#121212] flex flex-col items-center pt-5 pb-6 border-r border-[#2A2A2A]">
       
-      {/* Blastoise Logo - Increased bottom margin to mb-12 */}
-      <div className="mb-12">
+      <div className="mb-8">
         <img 
           src={blastoiseLogo} 
           alt="Blastoise" 
-          style={{
-            width: "56px",
-            height: "56px",
-            objectFit: "contain",
-            borderRadius: "50%",
-            paddingTop: '10px'
-          }}
+          className="w-[60px]"
         />
       </div>
 
-      {/* Menu Items - Increased gap-8 to gap-12 to space icons further apart */}
-      <div className="flex flex-col gap-12 w-full"
+      <div className="flex flex-col gap-8 w-full"
       style={{
       }}>
         {menu.map((item) => (
@@ -50,9 +41,7 @@ const Navbar = () => {
             key={item.name}
             onClick={() => setActive(item.name)}
             className="flex flex-col items-center cursor-pointer group"
-            style={{
-              paddingTop: '15px'
-            }}
+       
           >
             {/* Icon */}
             <div

@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 // import Footer from "./components/Footer"; 
 
 
@@ -26,8 +27,7 @@ const App = () => {
 
         {/* Content - Added overflow-y-auto so ONLY this part scrolls */}
         <div className="flex-1 p-6 text-gray-400 overflow-y-auto">
-          Content goes here...
-          {/* Like the content will be like Movie cards from components */}
+          <Home />
         </div>
         
       </div>
