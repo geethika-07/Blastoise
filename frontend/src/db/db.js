@@ -4,7 +4,7 @@ const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY; // Put you API in .env f
 
 function useDB(mediaType = "all", timeWindow = "week") {
   const [data, setData] = useState([]);
-  const KEYWORD = "One piece";
+  const KEYWORD = "Attack on Titans";
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=${TMDB_API_KEY}&query=${KEYWORD}`)
