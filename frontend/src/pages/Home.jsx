@@ -1,10 +1,18 @@
 import React from 'react';
-import Cards from '../components/Cards'; // Make sure this path is correct
-import DB from '../db/db';
-import { Link } from 'react-router-dom'; // Import Link
+import Cards from '../components/Cards';
+import useDB from '../db/db';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const movies = DB();
+  const movies = useDB(); // Custom hook hehe
+
+  if (!movies || movies.length === 0) {
+    return (
+      
+      <div>Loading...</div>
+    
+    ); 
+  }
 
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
@@ -12,9 +20,10 @@ const Home = () => {
         <Link key={movie.id} to={`/media/${movie.id}`}> 
           <Cards 
             title={movie.title}
-            poster={movie.poster}
-            year={movie.year}
-            rating={movie.rating}
+            poster={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+            rating={movie.vote_average}
+            releaseDate={movie.release_date}
+            overview={movie.overview}
           />
         </Link>
       ))}
